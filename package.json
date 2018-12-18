@@ -1,0 +1,20 @@
+{
+  "name": "girls-frontline-sitmap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.ntw-20.com/girls-frontline/girls-frontline-sitmap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0",
+    "sitemap": "^2.1.0",
+    "sync-request": "^6.0.0"
+  }
+}
