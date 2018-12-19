@@ -9,9 +9,9 @@ let urlsList = [];
 
 process.task01(urlsList);
 
-console.log(urlsList);
+//console.log(urlsList);
 
-console.log(common.$Get);
+//console.log(common.$Get);
 
 
 
@@ -45,5 +45,5 @@ let sitemap = sm.createSitemap({
     //     }
     // ]
 });
-
+// console.log(sitemap);
 fs.writeFileSync("./sitemap.xml", sitemap.toString());

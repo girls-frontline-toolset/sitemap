@@ -1,10 +1,14 @@
 import $ from "./Request";
 
-let HOST_NAME = "https://api.myjson.com";
+let HOST_NAME = "https://www.ntw-20.com";
 
 let $Get = {
-  list1 : $.getJSON(HOST_NAME + '/bins/chizk') ,
-  list2 : []
+  AllGirl : $.getJSON(HOST_NAME + '/api/inquiry/allGirl').data,
+
+  /** @namespace AllGirlTime.star5
+   *  @type {array}
+   *  */
+  AllGirlTime : $.getJSON(HOST_NAME + '/api/inquiry/allGirlTime').data
 };
 
 
