@@ -1,7 +1,8 @@
-import Task01 from './Task/Task01';
+import AddGirlTime from './Task/AddGirlTime';
+import AddDeviceTime from './Task/AddDeviceTime';
 
 export default function process(){
-    this.task01 = Task01;
-
+    this.addGirlTime = AddGirlTime;
+    this.addDeviceTime = AddDeviceTime;
 
 }

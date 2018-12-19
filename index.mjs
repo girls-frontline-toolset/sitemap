@@ -7,17 +7,10 @@ import Process from './modules/Process';
 let process = new Process();
 let urlsList = [];
 
-process.task01(urlsList);
+process.addGirlTime(urlsList);
+process.addDeviceTime(urlsList);
 
-//console.log(urlsList);
-
-//console.log(common.$Get);
-
-
-
-
-
-// TODO add girls time list
+// TODO add fairy time list
 
 // noinspection SpellCheckingInspection
 let sitemap = sm.createSitemap({
