@@ -9,8 +9,8 @@ let urlsList = [];
 
 process.addGirlTime(urlsList);
 process.addDeviceTime(urlsList);
-
-// TODO add fairy time list
+process.addFairyTime(urlsList);
+// TODO image list
 
 // noinspection SpellCheckingInspection
 let sitemap = sm.createSitemap({

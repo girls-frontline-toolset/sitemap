@@ -1,13 +1,9 @@
-/**
- * @typedef {'5','4','3','2'} dollStar
- */
+/** @typedef {'5','4','3','2'} DollStar */
+/** @typedef {'HG'|'SMG'|'RF'|'AR'|'MG'|'SG'} DollType */
+/** @typedef {'common'|'armor'|'unusual'|'boss'} SangvisType */
 
 /**
- * @typedef {'HG'|'SMG'|'RF'|'AR'|'MG'|'SG'} dollType
- */
-
-/**
- * @typedef  {array} girlTimeList
+ * @typedef  {array} GirlTimeList
  * @property {string} time
  * @property {array} star5
  * @property {array} star4
@@ -16,48 +12,66 @@
  */
 
 /**
- * @namespace girlList
- * @typedef {array} girlList
- * @property {number} no - no_name
+ * @typedef {array} GirlList
+ * @property {number} no
  * @property {string} name
- * @property {dollStar} star
- * @property {dollType} type
+ * @property {DollStar} star
+ * @property {DollType} type
  * @property {null|'0'|'1'} heavy
  * @property {string} src
- * @property {null|'1'} heavy
  */
 
-if (document.querySelectorAll === null){
-  document.querySelectorAll = function(){
-
-  }
-}
-
-/** @typedef {array} deviceList
+/** @typedef {array} DeviceList
  * @property {number} equipment_no
  * @property {string} name
  * @property {string} type
- * @property {dollStar} star
+ * @property {DollStar} star
  * @property {string} time
  * @property {string} attribute
  * @property {string} img
  * */
+
+/** @typedef {array} FairyList
+ *  @property {string} fairy_no
+ *  @property {string} name
+ *  @property {string} type
+ */
+
+/**
+ *  @typedef {array} FairyListTime
+ *  @property {string} time
+ *  @property {string} data
+ */
+
+/** @typedef {array} NpcList
+ *  @property {string} no
+ *  @property {string} name
+ */
+
+/** @typedef {array} SangvisList
+ *  @property {string} no
+ *  @property {string} name
+ *  @property {SangvisType} type
+ */
 import $ from "./Request";
 
 let HOST_NAME = "https://www.ntw-20.com";
 
 let $Get = {
-  /** @type {girlList[]} */
-  AllGirl : $.getJSON(HOST_NAME + '/api/inquiry/allGirl').data,
-  /** @type {girlTimeList[]} */
-  AllGirlTime : $.getJSON(HOST_NAME + '/api/inquiry/allGirlTime').data,
-  /** @type {deviceList[]} */
-  AllDevice : $.getJSON(HOST_NAME + '/api/inquiry/AllDevice').data,
-  //{fairy_no: "1", name: "勇士妖精", type: "戰鬥妖精"}
-  AllFairy : $.getJSON(HOST_NAME + '/api/inquiry/AllFairy').data,
-  //{time: "03:00:00", data: "3"}
-  AllFairyTime : $.getJSON(HOST_NAME + '/api/inquiry/AllTimeFairy').data,
+  /** @type {GirlList[]} */
+  AllGirl: $.getJSON(HOST_NAME + '/api/inquiry/allGirl').data,
+  /** @type {GirlTimeList[]} */
+  AllGirlTime: $.getJSON(HOST_NAME + '/api/inquiry/allGirlTime').data,
+  /** @type {DeviceList[]} */
+  AllDevice: $.getJSON(HOST_NAME + '/api/inquiry/AllDevice').data,
+  /** @type {FairyList[]} */
+  AllFairy: $.getJSON(HOST_NAME + '/api/inquiry/AllFairy').data,
+  /** @type {FairyListTime[]} */
+  AllFairyTime: $.getJSON(HOST_NAME + '/api/inquiry/AllTimeFairy').data,
+  /** @type {NpcList} */
+  AllNpc: $.getJSON(HOST_NAME + '/api/inquiry/npc').data,
+  /** @type {SangvisList} */
+  AllSangvis: $.getJSON(HOST_NAME + '/api/inquiry/sangvisl').data,
 };
-
 
 export default  {HOST_NAME , $Get};
