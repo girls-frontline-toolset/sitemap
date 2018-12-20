@@ -10,7 +10,8 @@ let urlsList = [];
 process.addGirlTime(urlsList);
 process.addDeviceTime(urlsList);
 process.addFairyTime(urlsList);
-// TODO image list
+// TODO image list https://www.ntw-20.com/image/WA2000
+// TODO base list
 
 // noinspection SpellCheckingInspection
 let sitemap = sm.createSitemap({
