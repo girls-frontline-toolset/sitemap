@@ -13,7 +13,7 @@ export default function AddFairyTime(urlList){
 
         timeList[fairyTime[i].time] = {name:fairyList[parseInt(fairyTime[i].data) - 1 ].name,img:fairyList[parseInt(fairyTime[i].data) - 1].fairy_no};
     }
-    console.log(timeList);
+    //console.log(timeList);
 
     for (let timeItem in timeList){
         let time = timeItem.split(":");

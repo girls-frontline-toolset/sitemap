@@ -68,9 +68,9 @@ let $Get = {
   AllFairy: $.getJSON(HOST_NAME + '/api/inquiry/AllFairy').data,
   /** @type {FairyListTime[]} */
   AllFairyTime: $.getJSON(HOST_NAME + '/api/inquiry/AllTimeFairy').data,
-  /** @type {NpcList} */
+  /** @type {NpcList[]} */
   AllNpc: $.getJSON(HOST_NAME + '/api/inquiry/npc').data,
-  /** @type {SangvisList} */
+  /** @type {SangvisList[]} */
   AllSangvis: $.getJSON(HOST_NAME + '/api/inquiry/sangvisl').data,
 };
 

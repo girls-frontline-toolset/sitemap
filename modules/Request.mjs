@@ -1,7 +1,10 @@
 import request from "sync-request";
 
+/**
+ * @param {string} url
+ * @returns {Object}
+ */
 let getJSON = function(url){
-    console.log(url);
     let res = request( 'GET',url);
     return JSON.parse(res.getBody('utf8'));
 };

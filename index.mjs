@@ -7,11 +7,12 @@ import Process from './modules/Process';
 let process = new Process();
 let urlsList = [];
 
+process.addBasePath(urlsList);
 process.addGirlTime(urlsList);
 process.addDeviceTime(urlsList);
 process.addFairyTime(urlsList);
-// TODO image list https://www.ntw-20.com/image/WA2000
-// TODO base list
+process.addImageList(urlsList);
+
 
 // noinspection SpellCheckingInspection
 let sitemap = sm.createSitemap({
