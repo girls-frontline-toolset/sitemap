@@ -9,15 +9,10 @@
 export default function sitemapItem(url,freq = "weekly", priority = 0.5 , data  = new Date().toISOString().substring(0, 10)){
   this.item = {url: url, changefreq: freq, priority: priority, lastmodrealtime: true, lastmod: data};
 
-
-    //{lang: 'ja', url: 'http://test.com/page-1/ja/',},
-    //             {lang: 'zh-Hans', url: 'http://test.com/page-1/ja/',},
-    //             {lang: 'zh-Hant', url: 'http://test.com/page-1/ja/',},
-
-
   this.item.links = [];
-  this.item.links.push({lang: 'en', url: 'http://test.com/page-1/',},);
-  this.item.links = [];
+  this.item.links.push({lang: 'zh-Hant', url: '/tw' + url}); //tw,
+  this.item.links.push({lang: 'zh-Hans', url: '/cn' + url});  //cn
+  this.item.links.push({lang: 'ja', url: '/ja' + url}); //ja
 
   this.addImage = function(url , caption , title){
       if(!title){ title = caption }

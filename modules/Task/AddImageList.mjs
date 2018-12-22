@@ -11,7 +11,9 @@ export default function AddImageList(urlList){
     }
 
     for (let i = 0; i < girlList.length; i++) {
-        urlList.push(new SitemapItem("/image/" + girlList[i].name +"/","daily").item);
+        if(girlList[i].name){
+            urlList.push(new SitemapItem("/image/" + girlList[i].name.replace("/","%2F") +"/","daily").item);
+        }
     }
 
     for (let i = 0; i <  sangvisList.length; i++) {

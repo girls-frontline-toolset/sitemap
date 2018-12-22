@@ -5,6 +5,18 @@ import Process from './modules/Process';
 
 
 let process = new Process();
+/**
+ * @typedef {array} url
+ * @property {string} url
+ * @property {'daily' | 'monthly' | 'weekly'} changefreq
+ * @property {number} priority
+ * @property {boolean} lastmodrealtime
+ * @property {string} lastmod
+ * @property {array} links
+ * @property {array} img
+ */
+
+/** @type {url[]} */
 let urlsList = [];
 
 process.addBasePath(urlsList);
@@ -12,7 +24,7 @@ process.addGirlTime(urlsList);
 process.addDeviceTime(urlsList);
 process.addFairyTime(urlsList);
 process.addImageList(urlsList);
-
+process.saveLinkToFile(urlsList);
 
 // noinspection SpellCheckingInspection
 let sitemap = sm.createSitemap({

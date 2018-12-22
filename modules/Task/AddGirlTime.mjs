@@ -13,9 +13,9 @@ export default function AddGirlTime(urlList){
         time.mm = parseInt(time.mm);
 
         if(time.hh === 0){
-            item = new SitemapItem("/list/girl/" + time.mm +"/");
+            item = new SitemapItem("/time/girl/" + time.mm +"/");
         }else{
-            item = new SitemapItem("/list/girl/" + time.hh + "/" + time.mm + "/");
+            item = new SitemapItem("/time/girl/" + time.hh + "/" + time.mm + "/");
         }
 
         let imgList = [];
