@@ -13,12 +13,10 @@ export default function AddFairyTime(urlList){
 
         timeList[fairyTime[i].time] = {name:fairyList[parseInt(fairyTime[i].data) - 1 ].name,img:fairyList[parseInt(fairyTime[i].data) - 1].fairy_no};
     }
-    //console.log(timeList);
-
     for (let timeItem in timeList){
         let time = timeItem.split(":");
         let item = new SitemapItem("/time/fairy/" + time[0] +"/" + time[1] +"/");
-        item.addImage("/common/fairy/fairy_" + timeList[timeItem].img  + ".jpg", timeList[timeItem].name)
+        item.addImage("/common/fairy/fairy_" + timeList[timeItem].img  + ".jpg", timeList[timeItem].name);
         urlList.push(item.item);
     }
 }

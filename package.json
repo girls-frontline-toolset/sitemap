@@ -1,11 +1,11 @@
 {
-  "name": "girls-frontline-sitmap",
+  "name": "girls-frontline-toolset-sitmap",
   "version": "1.0.0",
-  "description": "",
+  "description": "一個專用來生成 少女前線 工具集 的網站地圖(sitemap.xml)工具。",
   "main": "index.mjs",
   "repository": {
     "type": "git",
-    "url": "https://git.ntw-20.com/girls-frontline/girls-frontline-sitmap.git"
+    "url": "https://github.com/girls-frontline-toolset/sitmap"
   },
   "author": "",
   "license": "Apache-2.0",

@@ -1,4 +1,4 @@
-# Girls frontline sitemap
+# Girls frontline toolset / sitemap
 
 ## 1.介紹
 一個專用來生成 [少女前線 工具集](https://www.ntw-20.com) 的網站地圖(sitemap.xml)工具。
