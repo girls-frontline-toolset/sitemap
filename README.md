@@ -5,7 +5,7 @@
 
 ## 2.使用方法
 ```
-npm inatall
+npm install
 ```
 
 ```
