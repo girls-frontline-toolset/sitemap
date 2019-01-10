@@ -16,4 +16,4 @@ node --experimental-modules index.mjs
 [sitemap.xml](https://www.ntw-20.com/sitemap.xml)
 
 ## 4.License
-[Apache 2.0](/License)
+[Apache 2.0](https://github.com/girls-frontline-toolset/sitemap/blob/master/LICENSE)
