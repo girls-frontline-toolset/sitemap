@@ -7,7 +7,7 @@ export default function AddBasePath(urlList){
        list:{girl:[],fairy:[],wafer:[],support_unit:[],doc:["/","search","add"]},
        tool:{android:[],chrome:[]},
        bot:{line:["/","img"]},
-       more:{line:[],about:[],link:[],feedback:[],privacy_policy:[]},
+       more:{line:[],about:[],link:[],feedback:[],privacy_policy:[],sitemap:[]},
        fb:{list:[]},
        log:{update:[]},
        like:{list:[]},
