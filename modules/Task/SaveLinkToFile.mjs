@@ -6,10 +6,12 @@ export default function SaveLinkToFile(urlList){
     let twUrl = [];
     let cnUrl =[];
     let jaUrl =[];
+    let enUrl =[];
     let urlImage = [];
     let twImageUrl = [];
     let cnImageUrl =[];
     let jaImageUrl =[];
+    let enImageUrl =[];
 
 
     for (let i = 0; i < urlList.length; i++) {
@@ -42,16 +44,25 @@ export default function SaveLinkToFile(urlList){
                         jaUrl.push(urlList[i].links[j].url);
                     }
                     break;
+                case "en":
+                    if(urlList[i].links[j].url.indexOf("/image/") > -1){
+                        enImageUrl.push(urlList[i].links[j].url);
+                    }else{
+                        enUrl.push(urlList[i].links[j].url);
+                    }
+                    break;
             }
         }
     }
 
-    fs.writeFileSync("./url.json",JSON.stringify(url));
-    fs.writeFileSync("./url-tw.json",JSON.stringify(twUrl));
-    fs.writeFileSync("./url-cn.json",JSON.stringify(cnUrl));
-    fs.writeFileSync("./url-ja.json",JSON.stringify(jaUrl));
-    fs.writeFileSync("./url-image.json",JSON.stringify(urlImage));
-    fs.writeFileSync("./url-image-tw.json",JSON.stringify(twImageUrl));
-    fs.writeFileSync("./url-image-cn.json",JSON.stringify(cnImageUrl));
-    fs.writeFileSync("./url-image-ja.json",JSON.stringify(jaImageUrl));
+    fs.writeFileSync("./urlList/url.json",JSON.stringify(url));
+    fs.writeFileSync("./urlList/url-tw.json",JSON.stringify(twUrl));
+    fs.writeFileSync("./urlList/url-cn.json",JSON.stringify(cnUrl));
+    fs.writeFileSync("./urlList/url-ja.json",JSON.stringify(jaUrl));
+    fs.writeFileSync("./urlList/url-en.json",JSON.stringify(enUrl));
+    fs.writeFileSync("./urlList/url-image.json",JSON.stringify(urlImage));
+    fs.writeFileSync("./urlList/url-image-tw.json",JSON.stringify(twImageUrl));
+    fs.writeFileSync("./urlList/url-image-cn.json",JSON.stringify(cnImageUrl));
+    fs.writeFileSync("./urlList/url-image-ja.json",JSON.stringify(jaImageUrl));
+    fs.writeFileSync("./urlList/url-image-en.json",JSON.stringify(enImageUrl));
 }

@@ -13,6 +13,7 @@ export default function sitemapItem(url,freq = "weekly", priority = 0.5 , data  
   this.item.links.push({lang: 'zh-Hant', url: '/tw' + url}); //tw,
   this.item.links.push({lang: 'zh-Hans', url: '/cn' + url});  //cn
   this.item.links.push({lang: 'ja', url: '/ja' + url}); //ja
+  this.item.links.push({lang: 'en', url: '/en' + url}); //en
 
   this.addImage = function(url , caption , title){
       if(!title){ title = caption }

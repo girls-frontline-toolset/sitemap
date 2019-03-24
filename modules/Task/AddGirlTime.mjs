@@ -29,6 +29,9 @@ export default function AddGirlTime(urlList){
 
         for (let j = 0; j < imgList.length; j++) {
             item.addImage("/common/girl/girl_" + parseInt(imgList[j]) +".jpg" , girlList[parseInt(imgList[j]) - 1].name);
+            item.addImage("/common/girl/cn/girl_" + parseInt(imgList[j]) +".jpg" , girlList[parseInt(imgList[j]) - 1].cn_name);
+            item.addImage("/common/girl/ja/girl_" + parseInt(imgList[j]) +".jpg" , girlList[parseInt(imgList[j]) - 1].ja_name);
+            item.addImage("/common/girl/en/girl_" + parseInt(imgList[j]) +".jpg" , girlList[parseInt(imgList[j]) - 1].en_name);
         }
         urlList.push(item.item);
     }

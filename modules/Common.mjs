@@ -15,6 +15,9 @@
  * @typedef {array} GirlList
  * @property {number} no
  * @property {string} name
+ * @property {string} ja_name
+ * @property {string} en_name
+ * @property {string} cn_name
  * @property {DollStar} star
  * @property {DollType} type
  * @property {null|'0'|'1'} heavy
