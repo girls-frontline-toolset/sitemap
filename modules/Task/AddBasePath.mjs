@@ -14,7 +14,7 @@ export default function AddBasePath(urlList){
        make:{girl:[],device:[],hGirl:[],hDevice:[],wafer:[]},
        image:{add:[],all:[]},
        event:{schedule:[]},
-       "magical-tool":{"so-appetizing":[]}
+       "magical-tool":{"so-appetizing":[],"logistics-support":[]}
    };
 
     for (const key in path) {
