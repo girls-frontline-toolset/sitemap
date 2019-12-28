@@ -12,6 +12,11 @@ npm install
 node --experimental-modules index.mjs
 ```
 
+#node.js >=12
+```
+node --experimental-modules --experimental-json-modules --es-module-specifier-resolution=node index.mjs
+```
+
 ## 3.傳送門
 [sitemap.xml](https://www.ntw-20.com/sitemap.xml)
 
